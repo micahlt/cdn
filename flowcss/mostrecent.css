@@ -1,4 +1,3 @@
-@font-face {
-  font-family: "Colaborate";
-  src: url("../fonts/mainfont.woff");
+body {
+ text-align: center; 
 }
