@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'Colaborate-Regular';
-    src: url('fonts/ColabReg.eot');
-    src: url('fonts/ColabReg.eot?#iefix') format('embedded-opentype'),
-         url('fonts/ColabReg.woff2') format('woff2'),
-         url('fonts/ColabReg.woff') format('woff'),
-         url('fonts/ColabReg.ttf')  format('truetype'),
-         url('fonts/ColabReg.svg#Colaborate-Regular') format('svg');
+  font-family: "Colaborate";
+  src: url("../fonts/mainfont.woff");
 }
