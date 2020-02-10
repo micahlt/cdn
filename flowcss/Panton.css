@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Panton';
-    src: url('fonts/PantonDemo-Black.eot');
-    src: url('fonts/PantonDemo-Black.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PantonDemo-Black.woff2') format('woff2'),
-         url('fonts/PantonDemo-Black.woff') format('woff'),
-         url('fonts/PantonDemo-Black.ttf')  format('truetype'),
-         url('fonts/PantonDemo-Black.svg#Panton') format('svg');
-}
