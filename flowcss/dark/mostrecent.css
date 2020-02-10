@@ -1,0 +1,116 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+/* Reset margins */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141414;
+  color: white;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+  color: darkgray;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+  color: white;
+  line-height: 23px;
+  font-family: 'Roboto';
+}
+
+a {
+  color: white;
+  transition: .3s;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 2px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+input[type=button] {
+  color: #141414;
+  background-color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  transition: .3s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input[type=button]:hover {
+  color: white;
+  background-color: #141414;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom classes */
+.big-margin {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
