@@ -1,1 +1,4 @@
-
+@import url("Colaborate-Regular.css");
+body {
+  font-family: 'Colaborate-Regular', sans-serif;
+}
