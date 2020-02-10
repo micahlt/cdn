@@ -47,7 +47,9 @@ a {
 }
 
 a:hover {
-  background-color: black;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #3b3b3b;
   color: white;
 }
 
@@ -60,6 +62,7 @@ code {
   border-radius: 2px;
   line-height: 22px;
   font-size: 12px;
+  word-wrap: break-word;
 }
 
 input[type=button] {
@@ -77,7 +80,7 @@ input[type=button] {
 
 input[type=button]:hover {
   color: white;
-  background-color: #141414;
+  background-color: #3b3b3b;
   padding: 7px;
   border: none;
   border-radius: 4px;
