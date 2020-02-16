@@ -1,2 +1,2 @@
 # Composr
-## stupidly simple page generation framework
+stupidly simple page generation framework
