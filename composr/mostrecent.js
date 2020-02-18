@@ -7,7 +7,8 @@ const composr = {
     header: "font-family: sans-serif; font-size: 3em;",
     subheader: "font-family: sans-serif; font-size: 1.2em;",
     para: "font-family: sans-serif; font-size: 1em; margin-left: 10%; margin-right: 10%;",
-    link: "font-family: sans-serif; font-size: 1.2em;"
+    link: "font-family: sans-serif; font-size: 1.2em;",
+    img: "width: 90%;"
   },
   page(loc) {
     composr.page = document.getElementById(loc);
@@ -27,8 +28,11 @@ const composr = {
       case('link'):
       composr.soFar = composr.soFar.concat("<a href = '#' style = '" + composr.styles.link + "' onclick = '" + linkto + "'>" + content + "</a>");
       break;
+      case('img'):
+      composr.soFar = composr.soFar.concat("<a href = '" + linkto +"'><img src = '" + content + "' style = '" + composr.styles.img + "'></a>");
+      break;
       default:
-      console.log('type ', type, ' not supported');
+      console.log('The element type', type, 'is not supported.');
       break;
     }
   },
@@ -42,16 +46,68 @@ const composr = {
   },
   clearPage() {
     composr.soFar = "";
+    composr.page = "";
   },
-  clearStyles() {
-    composr.styles.page = "";
-    composr.styles.header = "";
-    composr.styles.subheader = "";
-    composr.styles.para = "";
-    composr.styles.link = "";
+  clearStyle(elem) {
+    switch(elem){
+      case('header'):
+      composr.styles.header = "";
+      break;
+      case('subheader'):
+      composr.styles.subheader = "";
+      break;
+      case('para'):
+      composr.styles.para = "";
+      break;
+      case('link'):
+      composr.styles.link = "";
+      break;
+      case('img'):
+      composr.styles.img = "";
+      break;
+      case('all'):
+      composr.styles.header = "";
+      composr.styles.subheader = "";
+      composr.styles.para = "";
+      composr.styles.link = "";
+      composr.styles.img = "";
+      break;
+      default: 
+      console.log("Invalid element", elem, "selected.")
+    }
+  },
+  newStyle(elem, style) {
+    switch(elem){
+      case('header'):
+      composr.styles.header = style;
+      break;
+      case('subheader'):
+      composr.styles.subheader = style;
+      break;
+      case('para'):
+      composr.styles.para = style;
+      break;
+      case('link'):
+      composr.styles.link = style;
+      break;
+      case('img'):
+      composr.styles.img = style;
+      break;
+      case('all'):
+      composr.styles.header = style;
+      composr.styles.subheader = style;
+      composr.styles.para = style;
+      composr.styles.link = style;
+      composr.styles.img = style;
+      break;
+      default: 
+      console.log("Invalid element", elem, "selected.")
+    }
   }
 }
 var header = 'header';
 var subheader = 'subheader';
 var para = 'para';
 var link = 'link'
+var img = 'img'
+var all = 'all'
