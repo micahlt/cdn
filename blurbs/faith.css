@@ -1,0 +1,17 @@
+.exodus-entry-content {
+  display: flex !important;
+}
+
+.exodus-entry-content > p {
+  flex: auto;
+}
+
+.exodus-entry-content > p:nth-of-type(3) {
+  padding-top: 40px;
+  display: none;
+}
+
+/*  
+    Link to this file:
+    <link href = "https://cdn.micahlindley.com/blurbs/faith.css" rel = "stylesheet" type = "text/css" />
+*/
