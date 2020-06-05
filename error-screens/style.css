@@ -50,4 +50,11 @@ h1 {
   width: 35px;
   filter: contrast(20%);
   -webkit-filter: contrast(20%);
+  transition: 0.2s;
+}
+
+.github img:hover {
+  filter: none;
+  -webkit-filter: none;
+  transition: 0.2s;
 }
